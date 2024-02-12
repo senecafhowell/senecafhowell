@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--Error One - was no doctype html-->
+
+<!--Error Two - no lang above the heading-->
+<html lang="en">
+
+<head>
+    <!--Error Three - no charset-->
+    <meta charset="UTF-8">
+
+    <!--Error Bonus - no meta name-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Error-Filled Page</title>
+    
+<!--Error Four - close head-->
+</head>
+
+<body>
+    <!--Error Five - close h1-->
+    <h1>Welcome to My Error-Filled Page</h1>
+    
+    <!--Error Six - open paragraph-->
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    <!--Error Seven - close with ol instead of ul-->
+    </ol>
+
+    <!--Error Eight - close paragraph-->
+    <p>This is another paragraph without proper indentation.</p>
+
+    <!--Error Nine - no alt-->
+    <img src="image.jpg" alt="Meme: The Two States of Every Programmer - I am a God and I have no idea what I'm doing">
+
+    <!--Error Ten - closed wrong-->
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <!--Error Eleven - add / to close td-->
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    <!--Error Twelve - no closing-->
+    </table>
+    
+    <!--Error Thirteen - source instead of src-->
+    <img src="error.jpeg" alt="Meme: Website is done! False. A website is never done.">
+
+    <!--Error Fourteen - changed center to this to actually work for html5-->
+    <p style="text-align:center;">This is centered text.</p>
+    
+    <!--Error Fifteen - change for html5 again-->
+    <p style="background-color:lightgray;">Text</p>
+
+    <input type="button" value="Click me">
+
+    <!--Error Sixteen - close comment-->
+    <!-- This is an unclosed comment -->
+
+    <!--Error Seventeen - closing tag-->
+    <a href="#">Link without closing tag</a>
+
+    <!--Error Eighteen - /em before /p; switch to u from em to make it underlined and not italicized-->
+    <p><u>Underlined text</u></p>
+
+    <dl>
+        <!--Error Nineteen - dt not li-->
+        <dt>Descriptive Item Title</dt>
+        <!--Error Twenty - dd not li-->
+        <dd>Descriptive Item Text</dd>
+    </dl>
+
+    <br>
+
+    <h2>Errors Found</h2>
+
+    <ol>
+        <li>Error One - There was no html doctype declaration. To fix this, I added "!DOCTYPE html" in angle brackets to the top of the file.</li>
+        <li>Error Two - The html lang attribute was called in the head instead of above the head. To fix this, I erased the original html lang line and moved it to be right below the initial DOCTYPE declaration.</li>
+        <li>Error Three - There was no charset. To fix this, I added the charset UTF-8 in the head.</li>
+        <li>Error Four - The head was not closed. To fix this, I added the "/head" tag in angle brackets to properly close it.</li>
+        <li>Error Five - The h1 tag in line 22 of my file was not closed. To fix this, I added the "/h1" tag in angle brackets to properly close it.</li>
+        <li>Error Six - The paragraph tag in line 25 of my file did not have an opening tag. To fix this, I added the "p" in angle brackets to properly open it.</li>
+        <li>Error Seven - The list was opened with an "ol" tag and closed with a "ul" tag, which do not match. To fix this, I closed the list with "/ol" in angle brackets instead of "/ul" (which made it an ordered list).</li>
+        <li>Error Eight - The paragraph tag in line 42 of my file did not have a closing tag. To fix this, I added the "/p" in angle brackets to properly close it.</li>
+        <li>Error Nine - There was no alt text for the image. To fix this, I added the following alt text: "Meme: The Two States of Every Programmer - I am a God and I have no idea what I'm doing".</li>
+        <li>Error Ten - The 48th line of code in my file was opened with "a" in angled brackets and closed with "/img," which did not match. To fix this, I changed the closing tag to "/a" in angle brackets.</li>
+        <li>Error Eleven - In the table, the value of 25's closing tag did not have a forward slash. To fix this, I added "/"" to the closing "td" tag.</li>
+        <li>Error Twelve - The table was not closed. To fix this, I added "/table" in angle brackets at the end of the table code.</li>
+        <li>Error Thirteen - The image tag was trying to use "source". To fix this, I changed "source" to the proper term: "src". I also made the alt text a bit more descriptive.</li>
+        <li>Error Fourteen - The center tag was being used, even though it's not valid in html5. To fix this, I added style="text-align:center;" to a paragraph tag.</li>
+        <li>Error Fifteen - BGcolor was being used, even though it's not valid in html5. To fix this, I added style="background-color:lightgray;" to a paragraph tag.</li>
+        <li>Error Sixteen - The comment was open. To fix this, I added "--" with an angle bracket to close the comment.</li>
+        <li>Error Seventeen - There was no closing tag in line 82 of my file. To fix this, I added "/a" with angle brackets to close it.</li>
+        <li>Error Eighteen - The tags were in the wrong order (and the words were italicized instead of underlined). To fix this, I put "/em" before "/p". Additionally, I switched to the "u" tag from the "em" tag to make it underlined and not italicized.</li>
+        <li>Error Nineteen - The li tag was used incorrectly (this is a descriptive list). To fix this, I switched the "li" tags to "dt" ones (to make it a descriptive item title).</li>
+        <li>Error Twenty - The li tag was used incorrectly (this is a descriptive list). To fix this, I switched the "li" tags to "dd" ones (to make it descriptive item text).</li>
+        <li>Error Bonus - There was no meta name/content like in the other html files I have, so, while not necessary, I added them anyway.</li>
+    </ol>
+
+</body>
+</html>
