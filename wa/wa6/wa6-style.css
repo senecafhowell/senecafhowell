@@ -1,0 +1,51 @@
+.mcc {
+    position: relative;
+}
+
+.mcc img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+}
+  
+.mcc .text-overlay {
+    position: absolute;
+    width: 65%;
+    height: 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: large;
+    text-align: center;
+    top: 1%;
+    left: 17.5%;
+    right: 17.5%;
+    background-color: hotpink;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcc .image-overlay .image {
+    position: absolute;
+    width: 50%;
+    top: 9.5%;
+    left: 25%;
+    z-index: 2;
+}
+
+.mcc .text-overlay2 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(114, 7, 68);
+    text-align: left;
+    bottom: 2%;
+    left: 1%;
+    z-index: 3;
+}
+
+table, th, td {
+    border: 2px solid;
+}
