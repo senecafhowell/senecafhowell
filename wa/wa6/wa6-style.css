@@ -11,15 +11,15 @@
   
 .mcc .text-overlay {
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 8%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: 93%;
     text-align: center;
     top: 1%;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     background-color: hotpink;
     z-index: 1;
     display: flex;
