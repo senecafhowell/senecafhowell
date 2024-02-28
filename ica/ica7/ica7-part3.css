@@ -1,0 +1,67 @@
+#narrowScreen{
+    border-style:solid;
+    width: 40vw;
+    height: 33vh;
+    border-color:rgba(20, 250, 173,10);
+    border-width: 3px;
+    border-radius:10px;
+    background-color: mediumseagreen;
+}
+
+@media screen and (max-width: 600px) {
+    #narrowScreen {
+        background-color: purple;
+        border-color: rgb(57, 2, 57);
+    }
+}
+
+#wideScreen{
+    border-style:solid;
+    width: 40vw;
+    height: 33vh;
+    border-color:red;
+    border-width: 3px;
+    border-radius:10px;
+    background-color: rgb(233, 48, 48);
+}
+
+@media screen and (min-width: 800px) {
+    #wideScreen {
+        background-color: lightblue;
+        border-color: blue;
+    }
+}
+
+#shortScreen{
+    border-style:solid;
+    width: 40vw;
+    height: 33vh;
+    border-color:rgb(34, 153, 141);
+    border-width: 3px;
+    border-radius:10px;
+    background-color: turquoise;
+}
+
+@media screen and (max-height: 500px) {
+    #shortScreen {
+        background-color: yellow;
+        border-color: rgb(175, 175, 45);
+    }
+}
+
+#tallScreen{
+    border-style:solid;
+    width: 40vw;
+    height: 33vh;
+    border-color:purple;
+    border-width: 3px;
+    border-radius:10px;
+    background-color: lavender;
+}
+
+@media screen and (min-height: 800px) {
+    #tallScreen {
+        background-color: orange;
+        border-color: orangered;
+    }
+}
