@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(79, 4, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: hotpink;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+img{
+    width:30vw;
+    height: 45vh;
+    animation-name: animate-image;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#blue-ball{
+    background-color: blue;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    transition: width 2s, height 2s, background-color 1s;
+}
+
+#blue-ball:hover {
+    background-color: rgb(223, 182, 241);
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes animate-image {
+    from {
+        width: 0vw;
+        height: 0vh;
+        transform: rotate(0deg);
+    }
+
+    to {
+        width: 30vw;
+        height: 45vh;
+        transform: rotate(360deg);
+    }
+}
