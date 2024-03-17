@@ -2,20 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(237, 214, 184);
+    background-color: rgb(230, 208, 178);
 }
 
 p {
     text-align: center;
-    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+    padding-left: 3em;
+    padding-right: 3em;
     color: #450211;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 1.9em;
 }
 
 nav {
     background-color: #450211;
-    padding: .5em;
+    padding: .2em;
     
     position: sticky;
     top: 0;
@@ -36,21 +39,24 @@ nav ul{
 nav ul li {
     display: flex;
     align-items: center;
+    padding-right: 0.5em;
 }
 
-nav ul li h2 {
-    margin-left: 10px;
+nav ul li h1 {
+    margin-left: 5px;
+    font-size: 2.75em;
 }
 
 nav ul li img {
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
 }
 
 nav a {
     background-color: rgb(106,46,82);
     text-decoration: none;
-    padding: 0.5em;
+    padding: 0.75em;
+    font-size: 1.5em;
 }
 
 nav a:link {
@@ -70,13 +76,15 @@ nav h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
 }
 
 .concert-info-item {
     padding: 20px;
     text-align: left;
+    background-image: url("../../img/napkin-art.png");
+    background-size: cover;
 }
 
 .concert-info-item h2 {
@@ -84,6 +92,7 @@ nav h2 {
     color: rgb(106,46,82);
     text-align: left;
     padding-left: 0.75em;
+    font-size: 1.75em;
     
 }
 
@@ -92,12 +101,90 @@ nav h2 {
     color: rgb(106,46,82);
     text-align: left;
     padding-left: 1em;
+    font-size: 1.2em;
 }
 
 .concert-info-item p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     text-align: left;
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+
+.concert-info-item2 {
+    padding: 20px;
+    text-align: left;
+    background-color: #450211;
+    border-color: rgb(106,46,82);
+    border-width: 0.75em;
+    border-style: solid;
+}
+
+.concert-info-item2 h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 5em;
+    font-size: 1.75em;
+    
+}
+
+.concert-info-item2 h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+.concert-info-item2 h6 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: rgb(106,46,82);
+    padding: 1em;
+}
+
+.concert-info-item2 h6 a {
+    text-decoration: none;
+}
+
+.concert-info-item2 a:link {
+    color: white;
+}
+  
+.concert-info-item2 a:visited {
+    color: white;
+}
+
+.footer {
+    background-color: rgb(106,46,82);
+    padding: .2em;
+    bottom: 0;
+}
+
+.footer p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+
+footer p a {
+    font-style: bold;
+}
+
+.footer a:link {
+    color: white;
+}
+  
+.footer a:visited {
+    color: white;
 }
 
 @media screen and (max-width: 400px) {
