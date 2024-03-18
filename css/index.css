@@ -19,6 +19,10 @@ p {
 nav {
     background-color: #450211;
     padding: .2em;
+
+    border-bottom: rgb(106,46,82);
+    border-bottom-width: 0.5em;
+    border-bottom-style: solid;
     
     position: sticky;
     top: 0;
@@ -127,7 +131,7 @@ nav h2 {
     text-align: center;
     padding-left: 3em;
     padding-right: 3em;
-    padding-top: 5em;
+    padding-top: 6em;
     font-size: 1.75em;
     
 }
@@ -163,7 +167,7 @@ nav h2 {
 
 .footer {
     background-color: rgb(106,46,82);
-    padding: .2em;
+    padding: 0.2em;
     bottom: 0;
 }
 
@@ -177,6 +181,7 @@ nav h2 {
 
 footer p a {
     font-style: bold;
+    padding-top: 1em;
 }
 
 .footer a:link {
@@ -187,10 +192,203 @@ footer p a {
     color: white;
 }
 
-@media screen and (max-width: 400px) {
+.colorado-symphony {
+    float: right;
+    color: white;
+    padding-right: 0em;
+}
+
+@media screen and (max-width: 400px) {  
+    p {
+        text-align: center;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        color: #450211;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1em;
+    }
+    
+    nav {
+        background-color: #450211;
+        padding: .4em;
+    
+        border-bottom: rgb(106,46,82);
+        border-bottom-width: 0.25em;
+        border-bottom-style: solid;
+        
+        position: sticky;
+        top: 0;
+    }
+      
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul li {
+        display: flex;
+        align-items: center;
+        padding-right: 0.25em;
+    }
+    
+    nav ul li h1 {
+        margin-left: 3px;
+        font-size: 1.35em;
+    }
+    
+    nav ul li img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    nav a {
+        background-color: rgb(106,46,82);
+        text-decoration: none;
+        padding: 0.4em;
+        font-size: 0.75em;
+    }
+    
+    nav a:link {
+        color: white;
+    }
+      
+    nav a:visited {
+        color: white;
+    }
+    
+    nav h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+    
     .concert-info-container {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        gap: 8px;
+        padding: 10px;
     }
-
+    
+    .concert-info-item {
+        padding: 10px;
+        text-align: left;
+        background-image: url("../../img/napkin-art.png");
+        background-size: cover;
+    }
+    
+    .concert-info-item h2 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(106,46,82);
+        text-align: left;
+        padding-left: 0.35em;
+        font-size: 1.2em;
+        
+    }
+    
+    .concert-info-item h3 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(106,46,82);
+        text-align: left;
+        padding-left: 0.5em;
+        font-size: 1em;
+    }
+    
+    .concert-info-item p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        text-align: left;
+        font-size: 0.75em;
+        padding-left: 0.5em;
+    }
+    
+    .concert-info-item2 {
+        padding: 10px;
+        text-align: left;
+        background-color: #450211;
+        border-color: rgb(106,46,82);
+        border-width: 0.4em;
+        border-style: solid;
+    }
+    
+    .concert-info-item2 h2 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        text-align: center;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 1em;
+        font-size: 0.8em;
+        
+    }
+    
+    .concert-info-item2 h3 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        text-align: center;
+        padding-left: 0.5em;
+        font-size: 0.6em;
+    }
+    
+    .concert-info-item2 h6 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 0.55em;
+        background-color: rgb(106,46,82);
+        padding: 0.5em;
+    }
+    
+    .concert-info-item2 h6 a {
+        text-decoration: none;
+    }
+    
+    .concert-info-item2 a:link {
+        color: white;
+    }
+      
+    .concert-info-item2 a:visited {
+        color: white;
+    }
+    
+    .footer {
+        background-color: rgb(106,46,82);
+        padding: 0.1em;
+        bottom: 0;
+    }
+    
+    .footer p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 0.55em;
+        padding-left: 0.5em;
+    }
+    
+    footer p a {
+        font-style: bold;
+        padding-top: 0.5em;
+    }
+    
+    .footer a:link {
+        color: white;
+    }
+      
+    .footer a:visited {
+        color: white;
+    }
+    
+    .colorado-symphony {
+        float: right;
+        color: white;
+        padding-right: 0em;
+    }
 }
