@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 400px;
+        background-color: rgb(230, 208, 178);
+      }
+
+      label {
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #450211;
+      }
+
+      div {
+        padding-bottom: 25px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 200px;
+        border-color: #450211;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      p {
+        background: #450211;
+        color: white;
+        padding: 10px;
+        visibility: hidden;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      button {
+        background-color: rgb(106,46,82);
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-top: 5px;
+        font-weight: bold;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+
+    <p class="story"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
