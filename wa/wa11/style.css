@@ -17,6 +17,16 @@ body {
   height: 480px;
 }
 
+.full-img img {
+  width: 640px;
+  height: 480px;
+  border-width: 2px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: white;
+  box-sizing: border-box;
+}
+
 .overlay {
   position: absolute;
   top: 0;
