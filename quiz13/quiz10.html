@@ -30,7 +30,7 @@
 
     let para1 = document.createElement('p');
     let para2 = document.createElement('p');
-    let motherInfo = 'The mother cats are called ';
+    let motherInfo = 'Mother Cats: ';
     let kittenInfo;
     const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
 
@@ -39,7 +39,7 @@
     .then(text => displayCatInfo(text))
     
     function displayCatInfo(catString) {
-      let cats = JSON.parse(catString);
+      const cats = JSON.parse(catString);
 
       let total = 0;
       let male = 0;
@@ -47,21 +47,24 @@
 
       let motherNames = [];
 
-      cats.forEach(cat => {
-        motherNames.push(cat.name);
-        cat.kittens.forEach(kitten => {
-          total++; 
-          if (kitten.gender === 'm') {
+      for (let i = 0; i < cats.length; i++) {
+        for (const kitten of cats[i].kittens) {
+          total++;
+          if (kitten.gender === "m") {
             male++;
-          } else if (kitten.gender === 'f') {
+          } else if (kitten.gender === "f") {
             female++;
           }
-        });
-      });
+        }
 
-      motherInfo = motherNames.length > 2 ? motherNames.slice(0, -1).join(', ') + ', and ' + motherNames.slice(-1) : motherNames.join(' and ') + '.';
+        if (i < cats.length - 1) {
+          motherInfo += `${cats[i].name}, `;
+        } else {
+          motherInfo += `and ${cats[i].name}.`;
+        }
+      }
 
-      kittenInfo = `Total kittens: ${total}. Male: ${male}. Female: ${female}.`;
+      kittenInfo = `Total kittens: ${total}; Male: ${male}; Female: ${female}.`;
 
       para1.textContent = motherInfo;
       para2.textContent = kittenInfo;
