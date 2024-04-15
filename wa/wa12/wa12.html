@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <title>Guess the Dog Breed!</title>
+</head>
+<body>
+  <div id="js-correct-guesses" class="correct-guesses"></div>  
+    <div class="app">
+        <section class="quotes">
+          <h2>Guess the Dog Breed!</h2>
+          <div class="quote-text" id="js-quote-text"></div>
+          <div class="quote-text" id="js-answer-text"></div>
+        </section>
+        <section class="controls" >
+          <button type="button" id="js-new-quote" class="new-quote button">
+              Generate an image!
+          </button>
+          <button type="button" id="js-tweet" class="twitter button">
+              Answer!
+          </button>
+          <br>
+          <h3>Did you get it right?</h3>
+          <button type="button" id="js-yes" class="yes button">
+              Yes!
+          </button>
+      </section>    
+      </div>
+
+      <div class="footer">
+        <div class="explanation">
+          To extend my machine, I first decided to implement pictures /and/ text instead of just text. <br> Second, I added a "did you get it 
+          right" button (as well as a counter) in order to make it a bit more fun and game like.
+        </div>
+      </div>
+
+      <script src="wa12.js"></script>
+</body>
+</html>
