@@ -198,13 +198,13 @@ function toggleEndGame() {
     }
 }
 
-// Start a timer that toggles the end game item for three seconds every thirty seconds (to make the game more annoying :) )
+// Start a timer that toggles the end game item for four seconds every thirty seconds (to make the game more annoying :) )
 function startendGameTimer() {
     endGameTimer = setInterval(() => {
         toggleEndGame();
         setTimeout(() => {
             toggleEndGame();
-        }, 3000);
+        }, 4000);
     }, 30000);
 }
 
