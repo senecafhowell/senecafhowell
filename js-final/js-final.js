@@ -94,7 +94,7 @@ function moveSnake() {
         }
     });
 
-    updateProgressBar();
+    updateVolumeBar();
     drawSnake();
 }
 
@@ -208,9 +208,9 @@ function startendGameTimer() {
     }, 30000);
 }
 
-// Update the progress bar based on the current snake length
-function updateProgressBar() {
-    let bar = document.getElementById('progressBar');
+// Update the volume bar based on the current snake length
+function updateVolumeBar() {
+    let bar = document.getElementById('volumeBar');
     let snakeLength = snake.length;
     let widthPercentage = ((snakeLength - initialSnakeLength) / (maxSnakeLength - initialSnakeLength)) * 100;
     bar.style.width = `${Math.max(0, widthPercentage)}%`;
@@ -225,7 +225,7 @@ function resetGame() {
     placeFood();
     placePoison();
     startendGameTimer();
-    updateProgressBar();
+    updateVolumeBar();
 }
 
 // Main game loop that continuously moves the snake
